@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		h1{
+			font-family: 'Abril Fatface', cursive;
+			color:white;
+			font-size:100px;
+
+		}
+
+		body{
+			margin:0;
+			background-color:rgb(0, 204, 204);
+		}
+
+		img{
+			width:50%;
+			height:50%;
+		}
+	</style>
+</head>
+<body>
+
+	<center><h1 id="header">Sydney's Sweets</h1></center>
+
+	<a href="sydney-2.html"><center><img id="icecream" src="https://thumbs.gfycat.com/HardtofindViciousHoki-max-1mb.gif"></center></a>
+
+	<script type="text/javascript">
+		
+		document.addEventListener("mousemove", function(event){
+			console.log(event.clientX)
+			var text = document.getElementById("header");
+
+			var icecream=document.getElementById("icecream");
+			icecream.style.filter="hue-rotate(" + event.clientX+"deg)";
+
+			// header.style.color ="rgb(" +20, 55, 20)";
+
+
+
+		// 		header.style.color = "rgb(" + Math.random()*event.clientX + ", " +Math.random()*event.clientY + ", " Math.random()*event.clientX +")";
+
+
+
+
+		 });
+	</script>
+
+</body>
+</html>
